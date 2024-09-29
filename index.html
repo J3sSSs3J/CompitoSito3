@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaggiatore Virtuale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Viaggiatore Virtuale</h1>
+            <p>Esplora le meraviglie del mondo, un click alla volta!</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="city-list">
+            <li onclick="showCity('rome')">Roma</li>
+            <li onclick="showCity('paris')">Parigi</li>
+            <li onclick="showCity('new-york')">New York</li>
+            <li onclick="showCity('tokyo')">Tokyo</li>
+            <li onclick="showCity('sydney')">Sydney</li>
+        </ul>
+    </nav>
+
+    <section id="city-info" class="container">
+        <div class="city-details">
+            <h2 id="city-name">Seleziona una città</h2>
+            <p id="city-description">Esplora i luoghi più iconici del mondo.</p>
+        </div>
+        <div class="city-image-container">
+            <img id="city-image" src="" alt="Immagine della città selezionata">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Viaggiatore Virtuale. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

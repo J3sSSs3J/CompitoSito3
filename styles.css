@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* centrare contenuti */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+header {
+    background-image: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+
+nav {
+    background-color: #333;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #4facfe;
+}
+
+
+#city-info {
+    display: flex;/*per mettere l'iimmagine a dx*/
+    
+    margin: 40px 0;
+   padding-left: 220px;
+}
+
+.city-details {
+    flex: 1;/*dimensione immagini in base alla finestra*/
+    padding-right: 40px;
+}
+
+.city-details h2 {
+    font-size: 2.5em;
+    color: #4facfe;
+    margin-bottom: 20px;
+}
+
+.city-details p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+.city-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.city-image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.city-image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9;
+}
